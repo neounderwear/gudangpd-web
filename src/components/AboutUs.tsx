@@ -43,7 +43,7 @@ interface AboutUsProps {
 }
 
 const AboutUs: React.FC<AboutUsProps> = ({ id, innerRef }) => {
-  const aboutImageUrl = "../src/assets/about-us-image.jpg";
+  const aboutImageUrl = "../src/assets/hero-5.png";
 
   const { ref: viewRef, inView } = useInView({
     triggerOnce: true,

@@ -1,6 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { clsx } from "clsx";
+import aboutImageUrl from "../src/assets/hero-5.jpg";
 
 const ExperienceIcon: React.FC<{ className?: string }> = ({ className }) => (
   <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -43,8 +44,6 @@ interface AboutUsProps {
 }
 
 const AboutUs: React.FC<AboutUsProps> = ({ id, innerRef }) => {
-  const aboutImageUrl = "../src/assets/hero-5.jpg";
-
   const { ref: viewRef, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2,

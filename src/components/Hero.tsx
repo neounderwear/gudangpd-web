@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { clsx } from "clsx";
-import mainImage from "../assets/hero-1.png";
-import subImage1 from "../assets/hero-2.png";
-import subImage2 from "../assets/hero-3.png";
+import mainImage from "../assets/hero-1.jpg";
+import subImage1 from "../assets/hero-2.jpg";
+import subImage2 from "../assets/hero-3.jpg";
 
 interface HeroProps {
   id: string;
